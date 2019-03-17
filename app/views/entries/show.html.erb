@@ -1,0 +1,10 @@
+<div>
+	<h2> <%= @entry.title %> </h2>
+	<p> <%= @entry.date %> </p>
+	<p> <%= @entry.content %> </p>
+</div>
+<div>
+	<%= link_to('Delete', entry_path(@entry), method: :delete) %>
+
+
+</div>

@@ -1,0 +1,12 @@
+<h1>My Rails Girls Diary</h1>
+
+<div>
+  <h4><%= link_to('New Entry', new_entry_path) %></h4>
+</div>
+
+  <div>
+    <% @entries.each do |entry| %>
+      <h2> <%= link_to(entry.title, entry_path(entry)) %> </h2>
+  
+    <% end %>
+  </div>
